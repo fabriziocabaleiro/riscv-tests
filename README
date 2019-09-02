@@ -1,0 +1,7 @@
+To compile execute make, two executable should be created fnc-fork and fnc-thread
+
+Example of executing a test:
+./fnc-fork -c 10000 -l 1000000000 -3 PMER_ME_DATA_CACHE_DTIM_BUSY
+
+A list of all the events that can be passed to the argument -3 can be obtained with the following command:
+awk '/define PMER_/{print $2}' multi.c
